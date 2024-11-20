@@ -1,19 +1,46 @@
 /* Task 1: Style the body */
 body {
-    /* insert code here */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f4f4f4;
 }
 
 /* Task 2: Create a pseudo-element for the background and blur */
 body::before {
-    /* insert code here */
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    filter: blur(8x);
+    background-color: cadetblue;
 }
 
 /* Task 3: Style the content area */
 .content {
-    /* insert code here */
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: gainsboro;
+    padding: 5px;
+    max-width: 24px;
+    background-color: chocolate;
 }
 
 /* Task 4: Add styles for headings, paragraphs, and buttons */
-h1, h2, .lead, .btn-primary {
-    /* insert code here */
+h1, h2{
+    font-weight: 2em;
+    background-color: black;
+} 
+.lead {
+   color: azure;
+} 
+.btn-primary {
+    font-weight: 3em;
 }
