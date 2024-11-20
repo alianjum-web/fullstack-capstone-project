@@ -1,9 +1,11 @@
 // db.js
-require('dotenv').config();
+require('dotenv').config('../.env');
 const MongoClient = require('mongodb').MongoClient;
 
 // MongoDB connection URL with authentication options
-let url = `${process.env.MONGO_URL}`;
+// let url = `${process.env.MONGO_URL}`;
+// Better approach unless u are not using string concatenation
+let url = process.env.MONGO_URL;
 
 let dbInstance = null;
 const dbName = "giftdb";
