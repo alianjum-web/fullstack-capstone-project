@@ -1,6 +1,6 @@
 {
-    "esversion": 6,
-    "asi": true, 
-    "node": true
-  }
-  
+  "esversion": 8,       // Enables ES8 syntax (async/await, etc.)
+  "node": true,         // Allows Node.js globals
+  "unused": false,      // Avoids warnings about unused variables
+  "strict": "implied"   // Avoids unnecessary strict mode
+}
