@@ -1,6 +1,10 @@
 {
-  "esversion": 8,       // Enables ES8 syntax (async/await, etc.)
-  "node": true,         // Allows Node.js globals
-  "unused": false,      // Avoids warnings about unused variables
-  "strict": "implied"   // Avoids unnecessary strict mode
+  "esversion": 6,          // Enable ES6 syntax
+  "browser": true,          // Allow browser-specific globals like `window` and `document`
+  "undef": true,            // Warn for undefined variables
+  "unused": true,           // Warn for unused variables
+  "globals": {              // Define global variables
+    "React": true,          // Allow `React` as a global variable
+    "ReactDOM": true
+  }
 }

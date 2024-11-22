@@ -47,5 +47,14 @@
     "eslint-plugin-react": "^7.37.2",
     "globals": "^15.12.0",
     "jshint": "^2.13.6"
-  }
+  },
+  
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  
+  
 }
+
